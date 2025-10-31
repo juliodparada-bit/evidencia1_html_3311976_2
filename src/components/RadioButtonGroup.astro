@@ -12,19 +12,51 @@
 <label>{etiqueta}</label>
 
 <div>
-    <input 
+    <div id="cedula">
+        <input 
             type="radio"
             name="rgb"
             id="radio1" 
-        /> C.C. 
-    <input 
+        /> 
+        <strong>C.C.</strong> 
+    </div>
+
+    <div id="tarjeta_identidad">
+        <input 
             type="radio"
             name="rgb"
             id="radio2" 
-        /> T.I.
-    <input 
+        /> 
+        <strong>T.I.</strong>
+    </div>
+
+    <div id="cedula_extranjeria">
+        <input 
             type="radio"
             name="rgb"
             id="radio3" 
-        /> C.E. 
+        /> 
+        <strong>C.E.</strong>
+    </div>   
+
 </div>
+<style>
+    #cedula{
+        background-color:rgb(223, 135, 152);
+        /*display:
+        determina como una etiqueta
+        se comportara en cuanto a:
+        largo, ancho, unibacion;*/
+        display: inline;
+    }
+        
+    #tarjeta_identidad{
+        background-color:rgb(223, 135, 152);
+        display: inline; 
+    }   
+    
+    #cedula_extranjeria{
+        background-color:rgb(223, 135, 152);
+        display: inline; 
+    }   
+</style>
