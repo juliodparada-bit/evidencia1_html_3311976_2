@@ -1,0 +1,30 @@
+---
+    interface Props {
+    etiqueta:string;
+    tipo: string;
+}
+//crear una variable
+//para recibir la etiqueta
+//Astro.props=Los valores desde
+//                  el control
+    const {etiqueta} = Astro.props ; 
+---
+<label>{etiqueta}</label>
+
+<div>
+    <input 
+            type="radio"
+            name="rgb"
+            id="radio1" 
+        /> C.C. 
+    <input 
+            type="radio"
+            name="rgb"
+            id="radio2" 
+        /> T.I.
+    <input 
+            type="radio"
+            name="rgb"
+            id="radio3" 
+        /> C.E. 
+</div>
